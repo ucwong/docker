@@ -17,3 +17,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl status docker
 ```
+```
+yum list docker-ce --showduplicates
+sudo yum install docker-ce-<VERSION STRING>
+```
