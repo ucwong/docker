@@ -18,6 +18,14 @@ sudo systemctl enable docker
 sudo systemctl status docker
 ```
 ```
-yum list docker-ce --showduplicates
+sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine
+sudo yum list docker-ce --showduplicates
 sudo yum install docker-ce-<VERSION STRING>
 ```
